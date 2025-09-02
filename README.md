@@ -1,8 +1,8 @@
-# 🚀 Modern Portfolio Website
+# Modern Portfolio Website
 
 A beautiful, responsive portfolio website built with HTML, CSS, and JavaScript. Features a modern design, smooth animations, and mobile-first approach.
 
-## ✨ Features
+# Features
 
 - **Responsive Design** - Works perfectly on all devices
 - **Modern UI/UX** - Clean, professional design with smooth animations
@@ -14,7 +14,7 @@ A beautiful, responsive portfolio website built with HTML, CSS, and JavaScript. 
 - **Progress Bar** - Scroll progress indicator
 - **Accessibility** - Keyboard navigation and focus management
 
-## 🏗️ Structure
+# Structure
 
 ```
 portfoliorohit/
@@ -24,13 +24,13 @@ portfoliorohit/
 └── README.md           # This file
 ```
 
-## 🚀 Getting Started
+# Getting Started
 
 1. **Download/Clone** the project files
 2. **Open** `index.html` in your web browser
 3. **Customize** the content as needed (see customization guide below)
 
-## 🎨 Customization Guide
+# Customization Guide
 
 ### 1. Personal Information
 
@@ -219,13 +219,13 @@ Customize the color scheme in `styles.css`:
 - Responsive image handling
 - Minimal JavaScript footprint
 
-## 🌐 Browser Support
+## Browser Support
 
 - **Modern Browsers**: Chrome, Firefox, Safari, Edge (latest versions)
 - **Mobile Browsers**: iOS Safari, Chrome Mobile, Samsung Internet
 - **Fallbacks**: Graceful degradation for older browsers
 
-## 📝 Customization Tips
+## Customization Tips
 
 1. **Keep it Simple**: Don't overcrowd with too many elements
 2. **High-Quality Images**: Use optimized images for better performance
@@ -233,7 +233,7 @@ Customize the color scheme in `styles.css`:
 4. **Test Responsiveness**: Check on various devices and screen sizes
 5. **Update Regularly**: Keep projects and skills current
 
-## 🚀 Deployment
+## Deployment
 
 ### Local Development
 - Open `index.html` in your browser
@@ -250,7 +250,7 @@ Customize the color scheme in `styles.css`:
 3. Enable GitHub Pages in repository settings
 4. Your site will be available at `username.github.io/repository-name`
 
-## 🤝 Contributing
+## Contributing
 
 Feel free to fork this project and customize it for your needs. If you make improvements, consider sharing them with the community!
 
@@ -258,7 +258,7 @@ Feel free to fork this project and customize it for your needs. If you make impr
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🆘 Support
+## Support
 
 If you need help customizing your portfolio:
 1. Check the customization guide above
@@ -266,7 +266,7 @@ If you need help customizing your portfolio:
 3. Use browser developer tools to inspect elements
 4. Test changes incrementally
 
-## 🎉 Features to Add
+## Features to Add
 
 Consider adding these features to enhance your portfolio:
 - Blog section
