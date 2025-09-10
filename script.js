@@ -351,7 +351,11 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+<<<<<<< HEAD
 // Add focus management for accessibility
+=======
+// // Add focus management for accessibility
+>>>>>>> 4f414bb047d80d2acfaf8e3cfcfef30776874f3a
 // document.querySelectorAll('.nav-link').forEach(link => {
 //     link.addEventListener('focus', function() {
 //         this.style.outline = '2px solid #000000';
