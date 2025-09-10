@@ -30,21 +30,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Header scroll effect
-window.addEventListener('scroll', () => {
-    const header = document.querySelector('.header');
-    if (window.scrollY > 100) {
-        header.style.background = 'rgba(255, 255, 255, 0.98)';
-        header.style.boxShadow = '0 2px 30px rgba(0, 0, 0, 0.15)';
-    } else {
-        header.style.background = 'rgba(255, 255, 255, 0.95)';
-        header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-    }
-});
+// window.addEventListener('scroll', () => {
+//     const header = document.querySelector('.header');
+//     if (window.scrollY > 100) {
+//         header.style.background = 'rgba(255, 255, 255, 0.98)';
+//         header.style.boxShadow = '0 2px 30px rgba(0, 0, 0, 0.15)';
+//     } else {
+//         header.style.background = 'rgba(255, 255, 255, 0.95)';
+//         header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+//     }
+// });
 
-// Scroll animations
+// Scroll animations (reduced intensity)
 const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
+    threshold: 0.05, // Lower threshold for gentler trigger
+    rootMargin: '0px 0px -10px 0px' // Less offset for subtler effect
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -251,7 +251,7 @@ loadingStyles.textContent = `
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: none;
         z-index: 9999;
         display: flex;
         align-items: center;
@@ -273,6 +273,7 @@ loadingStyles.textContent = `
 document.head.appendChild(loadingStyles);
 
 // Parallax effect for hero section (disabled on small screens)
+// Parallax effect for hero section (reduced intensity)
 function handleParallax() {
     const heroSection = document.querySelector('.home-section');
     if (!heroSection) return;
@@ -289,7 +290,8 @@ function parallaxScrollHandler() {
     const scrolled = window.pageYOffset;
     const heroSection = document.querySelector('.home-section');
     if (heroSection) {
-        const rate = scrolled * -0.5;
+        // Reduce the parallax effect by lowering the multiplier
+        const rate = scrolled * -0.15; // was -0.5, now much gentler
         heroSection.style.transform = `translateY(${rate}px)`;
     }
 }
@@ -329,7 +331,7 @@ progressBar.style.cssText = `
     left: 0;
     width: 0%;
     height: 3px;
-    background: linear-gradient(90deg, #2563eb, #3b82f6);
+    background: none;
     z-index: 10001;
     transition: width 0.1s ease;
 `;
@@ -350,15 +352,15 @@ document.addEventListener('keydown', (e) => {
 });
 
 // Add focus management for accessibility
-document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('focus', function() {
-        this.style.outline = '2px solid #2563eb';
-        this.style.outlineOffset = '2px';
-    });
+// document.querySelectorAll('.nav-link').forEach(link => {
+//     link.addEventListener('focus', function() {
+//         this.style.outline = '2px solid #000000';
+//         this.style.outlineOffset = '2px';
+//     });
     
-    link.addEventListener('blur', function() {
-        this.style.outline = 'none';
-    });
-});
+//     link.addEventListener('blur', function() {
+//         this.style.outline = 'none';
+//     });
+// });
 
 console.log('Portfolio website loaded successfully! 🚀');
