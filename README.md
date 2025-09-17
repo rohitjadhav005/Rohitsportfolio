@@ -277,9 +277,4 @@ Consider adding these features to enhance your portfolio:
 - Analytics integration
 - SEO optimization
 
----
-
-**Happy coding! 🎨✨**
-
-Your portfolio is now ready to showcase your skills and projects to the world!
 # Rohitsportfolio
